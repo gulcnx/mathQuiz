@@ -48,6 +48,8 @@ struct ContentView: View {
                     .padding()
                     
                     Text(feedback).font(.title3).padding()
+                    
+                    Text("Your score is \(score)").font(.title3).padding()
                 }
             }
             .navigationTitle("Math Quiz")
@@ -55,7 +57,7 @@ struct ContentView: View {
     }
 func checkAnswer(_ answer: String) {
         if answer == (questions)[currentIndex].correctAnswer{
-            feedback = "Correct"
+            feedback = "Correct!"
             score += 25
             currentIndex += 1
         } else {
@@ -68,3 +70,4 @@ func checkAnswer(_ answer: String) {
 #Preview {
     ContentView()
 }
+
