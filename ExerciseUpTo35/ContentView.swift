@@ -37,8 +37,7 @@ struct ContentView: View {
                     
                     ForEach((questions)[currentIndex].answers, id: \.self) { ans in
                         HStack{
-                            Image(systemName: "circle.fill")
-                            Button(ans){
+                            Button(ans, systemImage: "circle.fill"){
                                 checkAnswer(ans)
                             }
                         }
