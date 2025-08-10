@@ -24,7 +24,7 @@ struct ContentView: View {
         Questions(question: "What is 2 x 2 = ?", answers: ["2", "4", "6"], correctAnswer: "4"),
         Questions(question: "What is 3 x 2 = ?", answers: ["2", "4", "6"], correctAnswer: "6"),
         Questions(question: "What is 3 x 3 = ?", answers: ["2", "4", "9"], correctAnswer: "9"),
-        Questions(question: "What is 2 x 4 = ?", answers: ["2", "4", "8"], correctAnswer: "4")
+        Questions(question: "What is 2 x 4 = ?", answers: ["2", "4", "8"], correctAnswer: "8")
     ]
     
     var body: some View {
