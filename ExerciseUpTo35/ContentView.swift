@@ -59,12 +59,16 @@ func checkAnswer(_ answer: String) {
         if answer == (questions)[currentIndex].correctAnswer{
             feedback = "Correct!"
             score += 25
-            currentIndex += 1
         } else {
             feedback = "Wrong"
-            currentIndex += 1
         }
+    
+    if currentIndex == 3 {
+        feedback = "Quiz ended."
+    }else {
+        currentIndex += 1
     }
+  }
 }
 
 #Preview {
